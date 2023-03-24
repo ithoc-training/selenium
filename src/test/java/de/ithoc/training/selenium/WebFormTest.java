@@ -15,6 +15,7 @@ import java.time.Duration;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+
 public class WebFormTest {
 
     private WebDriver driver;
@@ -26,7 +27,7 @@ public class WebFormTest {
         options.addArguments("--remote-allow-origins=*");
         driver = new ChromeDriver(options);
 
-        // Navigate to this website which is a form.
+        // Navigate to this example website which is a form.
         driver.get("https://www.selenium.dev/selenium/web/web-form.html");
 
         // Wait a little to ensure website has been loaded.
@@ -74,7 +75,9 @@ public class WebFormTest {
     }
 
     /**
-     * Scenario: Find the text box, put some text in and send the form
+     * Scenario: Input field and submit button
+     *
+     * Find the text box, put some text in and send the form
      * by pressing the button.
      */
     @Test
