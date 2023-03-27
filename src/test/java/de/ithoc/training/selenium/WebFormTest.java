@@ -76,7 +76,7 @@ public class WebFormTest {
 
     /**
      * Scenario: Input field and submit button
-     *
+     * <p>
      * Find the text box, put some text in and send the form
      * by pressing the button.
      */
